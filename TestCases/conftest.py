@@ -30,6 +30,6 @@ def browser(request):
 
 def pytest_metadata(metadata):
     metadata['Project Name'] = 'My Home Entry'
-    metadata['Module Name'] = 'Dashboard'
+    metadata['Module Name'] = 'Buildings'
     metadata['Tester Name'] = 'My Tester'
 

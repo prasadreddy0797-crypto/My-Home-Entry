@@ -4,7 +4,7 @@ from PageObjects.LoginPage import LoginPage
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
-
+@pytest.mark.regression
 class Test_001_Login:
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUseremail()
@@ -15,6 +15,7 @@ class Test_001_Login:
     # -----------------------------
     # Test Home Page Title
     # -----------------------------
+    @pytest.mark.regression
     def test_homepagetitle(self, setup):
 
         self.logger.info("******* Test_001_Login ******")
